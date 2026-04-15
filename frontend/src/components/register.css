@@ -1,0 +1,124 @@
+/* Register Page Styling - Same as Login */
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff8f0 0%, #ffe3c4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-page h2 {
+  color: #ff7b00;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.auth-page form {
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(255, 123, 0, 0.2);
+  border: 2px solid #ff7b00;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-page form input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.auth-page form input:focus {
+  outline: none;
+  border-color: #ff7b00;
+  box-shadow: 0 0 0 3px rgba(255, 123, 0, 0.1);
+}
+
+.auth-page form button {
+  width: 100%;
+  background: #ff7b00;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 123, 0, 0.3);
+}
+
+.auth-page form button:hover {
+  background: #e96c00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 123, 0, 0.4);
+}
+
+.auth-page form button:active {
+  transform: translateY(0);
+}
+
+.auth-page p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.auth-page .success {
+  color: #1e9c60;
+  background: #d4edda;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #c3e6cb;
+}
+
+.auth-page .error {
+  color: #b33;
+  background: #ffe3c4;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #ffb266;
+}
+
+.back-to-login {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.login-link {
+  color: #ff7b00;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.login-link:hover {
+  color: #e96c00;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-page form {
+    padding: 30px 20px;
+  }
+  
+  .auth-page h2 {
+    font-size: 1.6rem;
+  }
+}
+  
